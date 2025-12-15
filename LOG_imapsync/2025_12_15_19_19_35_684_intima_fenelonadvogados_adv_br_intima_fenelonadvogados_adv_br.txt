@@ -1,0 +1,248 @@
+Here is imapsync 2.314 /opt/homebrew/Cellar/imapsync/2.314/libexec/bin/imapsync on host MacBook-Pro-de-Lucas.local, a darwin system with 0.1/18.0 free GiB of RAM, 91.14% used by processes.
+with Perl 5.34.1 and Mail::IMAPClient 3.43
+Transfer started at Monday 15 December 2025-12-15 19:19:35 -0300 -03
+PID is 70524 my PPID is 70485
+Log file is LOG_imapsync/2025_12_15_19_19_35_684_intima_fenelonadvogados_adv_br_intima_fenelonadvogados_adv_br.txt ( to change it, use --logfile path ; or use --nolog to turn off logging )
+Load is 2.77 3.80 4.13 on 11 cores
+Real user id is lucashenrique (uid 501)
+Effective user id is lucashenrique (euid 501)
+$RCSfile: imapsync,v $ $Revision: 2.314 $ $Date: 2025/09/23 16:55:17 $ 
+Command line used, run by /usr/bin/perl5.34:
+/opt/homebrew/Cellar/imapsync/2.314/libexec/bin/imapsync --host1 imap.hostinger.com --port1 993 --user1 intima@fenelonadvogados.adv.br --password1 MASKED --ssl1 --host2 pro108.dnspro.com.br --port2 993 --user2 intima@fenelonadvogados.adv.br --password2 MASKED --ssl2 --syncinternaldates --syncacls --subscribe --nofoldersizes --useheader Message-Id --useheader Date --skipsize --allowsizemismatch --no-modulesversion --noreleasecheck
+Current directory is /Users/lucashenrique/Projetos/Github/transfer-mail
+Temp directory is /Users/lucashenrique/tmp ( to change it use --tmpdir dirpath )
+Creating temp directory /Users/lucashenrique/tmp
+kill -QUIT 70524 # special behavior: call to sub catch_exit
+kill -TERM 70524 # special behavior: call to sub catch_exit
+kill -INT 70524 # special behavior: call to sub catch_reconnect
+kill -HUP 70524 # special behavior: call to sub catch_print
+kill -USR1 70524 # special behavior: call to sub toggle_sleep
+Logging to a logfile by default. To turn off logging, use --nolog
+Directory LOG_imapsync is writable and readable and gointoable. Good.
+File /Users/lucashenrique/tmp/imapsync.pid does not exist
+PID file is /Users/lucashenrique/tmp/imapsync.pid ( to change it, use --pidfile filepath ; to avoid it use --pidfile "" )
+Writing my PID 70524 in /Users/lucashenrique/tmp/imapsync.pid
+Writing also my logfile name in /Users/lucashenrique/tmp/imapsync.pid : LOG_imapsync/2025_12_15_19_19_35_684_intima_fenelonadvogados_adv_br_intima_fenelonadvogados_adv_br.txt
+Info: will resync flags for already transferred messages. Use --noresyncflags to not resync flags.
+SSL debug mode level is --debugssl 1 (can be set from 0 meaning no debug to 4 meaning max debug)
+Host1: SSL default mode is like --sslargs1 "SSL_verify_mode=0", meaning for host1 SSL_VERIFY_NONE, ie, do not check the server certificate.
+Host1: Use --sslargs1 SSL_verify_mode=1 to have SSL_VERIFY_PEER, ie, check the server certificate. of host1
+Host2: SSL default mode is like --sslargs2 "SSL_verify_mode=0", meaning for host2 SSL_VERIFY_NONE, ie, do not check the server certificate.
+Host2: Use --sslargs2 SSL_verify_mode=1 to have SSL_VERIFY_PEER, ie, check the server certificate. of host2
+Info: turned ON syncinternaldates, will set the internal dates (arrival dates) on host2 same as host1.
+Host1: will try to use LOGIN authentication on host1
+Host2: will try to use LOGIN authentication on host2
+Host1: imap connection timeout is 120 seconds
+Host2: imap connection timeout is 120 seconds
+Host1: imap connection keepalive is on on host1. Use --nokeepalive1 to disable it.
+Host2: imap connection keepalive is on on host2. Use --nokeepalive2 to disable it.
+Host1: IMAP server [imap.hostinger.com] port [993] user [intima@fenelonadvogados.adv.br]
+Host2: IMAP server [pro108.dnspro.com.br] port [993] user [intima@fenelonadvogados.adv.br]
+Host1: connecting and login on host1 [imap.hostinger.com] port [993] with user [intima@fenelonadvogados.adv.br]
+DEBUG: .../IO/Socket/SSL.pm:1177: global error: Undefined SSL object
+DEBUG: .../IO/Socket/SSL.pm:1177: global error: Undefined SSL object
+Host1 IP address: 2606:4700:90:0:4bc4:2557:ca17:2529 Local IP address: 2804:4854:3:118d:541a:bb08:6e8f:ba71
+Host1 banner: * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ AUTH=PLAIN AUTH=LOGIN] Server ready.
+Host1 capability before authentication: IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ AUTH=PLAIN AUTH=LOGIN AUTH
+Host1: imap.hostinger.com says it has CAPABILITY for AUTHENTICATE LOGIN
+Host1: success login on [imap.hostinger.com] with user [intima@fenelonadvogados.adv.br] auth [LOGIN] or [LOGIN]
+Host2: connecting and login on host2 [pro108.dnspro.com.br] port [993] with user [intima@fenelonadvogados.adv.br]
+DEBUG: .../IO/Socket/SSL.pm:1177: global error: Undefined SSL object
+DEBUG: .../IO/Socket/SSL.pm:1177: global error: Undefined SSL object
+Host2 IP address: 186.209.113.102 Local IP address: 192.168.0.35
+Host2 banner: * OK [CAPABILITY IMAP4rev1 LOGIN-REFERRALS ID ENABLE IDLE SASL-IR LITERAL+ AUTH=PLAIN AUTH=LOGIN] Dovecot ready.
+Host2 capability before authentication: IMAP4rev1 LOGIN-REFERRALS ID ENABLE IDLE SASL-IR LITERAL+ AUTH=PLAIN AUTH=LOGIN AUTH
+Host2: pro108.dnspro.com.br says it has CAPABILITY for AUTHENTICATE LOGIN
+Host2: success login on [pro108.dnspro.com.br] with user [intima@fenelonadvogados.adv.br] auth [LOGIN] or [LOGIN]
+Host1: state Authenticated
+Host2: state Authenticated
+Host1 capability once authenticated: IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY PREVIEW STATUS=SIZE SAVEDATE LITERAL+ NOTIFY SPECIAL-USE COMPRESS=DEFLATE QUOTA THREAD I18NLEVEL CONTEXT SNIPPET PREVIEW STATUS COMPRESS
+Host2 capability once authenticated: IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE REPLACE SNIPPET=FUZZY PREVIEW=FUZZY PREVIEW SPECIAL-USE STATUS=SIZE SAVEDATE COMPRESS=DEFLATE INPROGRESS NOTIFY LITERAL+ QUOTA THREAD I18NLEVEL CONTEXT SNIPPET PREVIEW STATUS COMPRESS
+Host1: found ID capability. Sending/receiving ID, presented in raw IMAP for now.
+In order to avoid sending/receiving ID, use option --noid
+Sending: 4 ID ("name" "imapsync" "version" "2.314" "os" "darwin" "vendor" "Gilles LAMIRAL" "support-url" "https://imapsync.lamiral.info/" "date" "23-Sep-2025 16:55:17 +0000" "side" "host1")
+Sent 182 bytes
+Read: 	* ID ("name" "Dovecot")
+  	4 OK ID completed (0.001 + 0.000 secs).
+Host2: found ID capability. Sending/receiving ID, presented in raw IMAP for now.
+In order to avoid sending/receiving ID, use option --noid
+Sending: 4 ID ("name" "imapsync" "version" "2.314" "os" "darwin" "vendor" "Gilles LAMIRAL" "support-url" "https://imapsync.lamiral.info/" "date" "23-Sep-2025 16:55:17 +0000" "side" "host2")
+Sent 182 bytes
+Read: 	* ID ("name" "Dovecot")
+  	4 OK ID completed (0.001 + 0.000 secs).
+
+Host2: QUOTA capability found, presented in raw IMAP on next lines
+Sending: 5 GETQUOTAROOT INBOX
+Sent 22 bytes
+Read: 	* QUOTAROOT INBOX Mailbox "cPanel Account"
+  	* QUOTA Mailbox (STORAGE 63599 256000)
+  	* QUOTA "cPanel Account" (STORAGE 96204956 204800000)
+  	5 OK Getquotaroot completed (0.001 + 0.000 secs).
+
+Host2: Quota current storage is 65125376 bytes. Limit is 262144000 bytes. So 24.84 % full
+Host1: Compression is off. Use --compress1 to allow compression on host1
+Host2: Compression is off. Use --compress2 to allow compression on host2
+Compression often generates annoying errors, especially with SSL connexions, Gmail, Office365. So, avoid it.
+Host1: found 5 folders.
+Host2: found 7 folders.
+Host1: guessing separator from folder listing: [.]
+Host1: separator given by NAMESPACE: [.]
+Host2: guessing separator from folder listing: [.]
+Host2: separator given by NAMESPACE: [.]
+Host1: guessing prefix from folder listing: [INBOX.]
+Host1: prefix given by NAMESPACE: [INBOX.]
+Host2: guessing prefix from folder listing: [INBOX.]
+Host2: prefix given by NAMESPACE: [INBOX.]
+Host1: separator and prefix: [.][INBOX.]
+Host2: separator and prefix: [.][INBOX.]
+Looking at INBOX or Inbox on both sides and deciding of the mapping to apply. Use --nofixInboxINBOX to avoid this behavior.
+INBOX INBOX on both sides so no mapping applied.
+Including all folders found by default. Use --subscribed or --folder or --folderrec or --include to select specific folders. Use --exclude to unselect specific folders.
+Host1: Checking wanted folders exist. Use --nocheckfoldersexist to avoid this check (shared of public namespace targeted).
+Host1: Checking wanted folders are selectable. Use --nocheckselectable to avoid this check.
+Turned off automapping folders ( use --automap to turn on automapping )
+
+++++ Listing folders
+All foldernames are presented between brackets like [X] where X is the foldername.
+When a foldername contains non-ASCII characters it is presented in the form
+[X] = [Y] where
+X is the imap foldername you have to use in command line options and
+Y is the utf8 output just printed for convenience, to recognize it.
+
+Host1: folders list (first the raw imap format then the [X] = [Y]):
+* LIST (\HasChildren) "." INBOX
+* LIST (\HasNoChildren \UnMarked \Trash) "." INBOX.Trash
+* LIST (\HasNoChildren \UnMarked \Sent) "." INBOX.Sent
+* LIST (\HasNoChildren \UnMarked \Junk) "." INBOX.Junk
+* LIST (\HasNoChildren \UnMarked \Drafts) "." INBOX.Drafts
+14 OK List completed (0.001 + 0.000 secs).
+
+[INBOX]
+[INBOX.Drafts]
+[INBOX.Junk]
+[INBOX.Sent]
+[INBOX.Trash]
+
+Host2: folders list (first the raw imap format then the [X] = [Y]):
+* LIST (\HasChildren) "." INBOX
+* LIST (\HasNoChildren \UnMarked \Archive) "." INBOX.Archive
+* LIST (\HasNoChildren \UnMarked \Junk) "." INBOX.spam
+* LIST (\HasNoChildren \UnMarked \Trash) "." INBOX.Trash
+* LIST (\HasNoChildren \UnMarked \Sent) "." INBOX.Sent
+* LIST (\HasNoChildren \UnMarked) "." INBOX.Junk
+* LIST (\HasNoChildren \UnMarked \Drafts) "." INBOX.Drafts
+10 OK List completed (0.002 + 0.000 + 0.001 secs).
+
+[INBOX]
+[INBOX.Archive]
+[INBOX.Drafts]
+[INBOX.Junk]
+[INBOX.Sent]
+[INBOX.Trash]
+[INBOX.spam]
+
+Folders in host2 not in host1:
+[INBOX.spam]
+[INBOX.Archive]
+
+Checking SEARCH ALL works on both accounts. To avoid that check, use --nochecknoabletosearch
+Host1: checking if SEARCH ALL works on INBOX
+Host1: folder [INBOX] has 2221 messages mentioned by SELECT
+Host1: folder [INBOX] has 2221 messages found by SEARCH ALL
+Host1: folder [INBOX] has the same messages count (2221) by SELECT and SEARCH ALL
+Host2: checking if SEARCH ALL works on INBOX
+Host2: folder [INBOX] has 2219 messages mentioned by SELECT
+Host2: folder [INBOX] has 2219 messages found by SEARCH ALL
+Host2: folder [INBOX] has the same messages count (2219) by SELECT and SEARCH ALL
+Good! SEARCH ALL works on both accounts.
+++++ Looping on each one of 5 folders to sync
+Folder     1/5 [INBOX]                             -> [INBOX]                            
+Host1: folder [INBOX] has 2221 messages in total (mentioned by SELECT)
+Host1: Could not getacl for INBOX: 18 BAD Error in IMAP command GETACL: Unknown command (0.001 + 0.000 secs).
+Host2: Could not getacl for INBOX: 13 BAD Error in IMAP command GETACL: Unknown command (0.001 + 0.000 secs).
+Host2: folder [INBOX] has 2219 messages in total (mentioned by SELECT)
+Host2: folder [INBOX] permanentflags: 
+Host1: folder [INBOX] considering 2221 messages
+Host2: folder [INBOX] considering 2219 messages
+Host1: folder [INBOX] selected 2221 messages, duplicates 1
+Host2: folder [INBOX] selected 2219 messages, duplicates 0
+msg INBOX/2239 {6868}         copied to INBOX/2220       0.02 msgs/s  0.114 KiB/s 6.707 KiB copied 
+msg INBOX/2240 {6880}         copied to INBOX/2221       0.03 msgs/s  0.226 KiB/s 13.426 KiB copied 
+Folder     2/5 [INBOX.Drafts]                      -> [INBOX.Drafts]                     
+Host1: folder [INBOX.Drafts] has 0 messages in total (mentioned by SELECT)
+Host1: Could not getacl for INBOX.Drafts: 25 BAD Error in IMAP command GETACL: Unknown command (0.001 + 0.000 secs).
+Host2: Could not getacl for INBOX.Drafts: 2239 BAD Error in IMAP command GETACL: Unknown command (0.001 + 0.000 secs).
+Host2: folder [INBOX.Drafts] has 0 messages in total (mentioned by SELECT)
+Host2: folder [INBOX.Drafts] permanentflags: 
+Host1: folder [INBOX.Drafts] considering 0 messages
+Host2: folder [INBOX.Drafts] considering 0 messages
+Host1: folder [INBOX.Drafts] selected 0 messages, duplicates 0
+Host2: folder [INBOX.Drafts] selected 0 messages, duplicates 0
+Folder     3/5 [INBOX.Junk]                        -> [INBOX.Junk]                       
+Host1: folder [INBOX.Junk] has 4 messages in total (mentioned by SELECT)
+Host1: Could not getacl for INBOX.Junk: 28 BAD Error in IMAP command GETACL: Unknown command (0.001 + 0.000 secs).
+Host2: Could not getacl for INBOX.Junk: 2243 BAD Error in IMAP command GETACL: Unknown command (0.001 + 0.000 secs).
+Host2: folder [INBOX.Junk] has 4 messages in total (mentioned by SELECT)
+Host2: folder [INBOX.Junk] permanentflags: 
+Host1: folder [INBOX.Junk] considering 4 messages
+Host2: folder [INBOX.Junk] considering 4 messages
+Host1: folder [INBOX.Junk] selected 4 messages, duplicates 0
+Host2: folder [INBOX.Junk] selected 4 messages, duplicates 0
+Folder     4/5 [INBOX.Sent]                        -> [INBOX.Sent]                       
+Host1: folder [INBOX.Sent] has 0 messages in total (mentioned by SELECT)
+Host1: Could not getacl for INBOX.Sent: 33 BAD Error in IMAP command GETACL: Unknown command (0.001 + 0.000 secs).
+Host2: Could not getacl for INBOX.Sent: 2253 BAD Error in IMAP command GETACL: Unknown command (0.001 + 0.000 secs).
+Host2: folder [INBOX.Sent] has 0 messages in total (mentioned by SELECT)
+Host2: folder [INBOX.Sent] permanentflags: 
+Host1: folder [INBOX.Sent] considering 0 messages
+Host2: folder [INBOX.Sent] considering 0 messages
+Host1: folder [INBOX.Sent] selected 0 messages, duplicates 0
+Host2: folder [INBOX.Sent] selected 0 messages, duplicates 0
+Folder     5/5 [INBOX.Trash]                       -> [INBOX.Trash]                      
+Host1: folder [INBOX.Trash] has 0 messages in total (mentioned by SELECT)
+Host1: Could not getacl for INBOX.Trash: 36 BAD Error in IMAP command GETACL: Unknown command (0.001 + 0.000 secs).
+Host2: Could not getacl for INBOX.Trash: 2257 BAD Error in IMAP command GETACL: Unknown command (0.001 + 0.000 + 0.001 secs).
+Host2: folder [INBOX.Trash] has 0 messages in total (mentioned by SELECT)
+Host2: folder [INBOX.Trash] permanentflags: 
+Host1: folder [INBOX.Trash] considering 0 messages
+Host2: folder [INBOX.Trash] considering 0 messages
+Host1: folder [INBOX.Trash] selected 0 messages, duplicates 0
+Host2: folder [INBOX.Trash] selected 0 messages, duplicates 0
+++++ End looping on each folder
+++++ Statistics
+Transfer started on                     : Monday 15 December 2025-12-15 19:19:35 -0300 -03
+Transfer ended on                       : Monday 15 December 2025-12-15 19:20:41 -0300 -03
+Transfer time                           : 66.0 sec
+Folders synced                          : 5/5 synced
+Folders deleted on host2                : 0 
+Messages transferred                    : 2 
+Messages skipped                        : 2223
+Messages found duplicate on host1       : 1
+Messages found duplicate on host2       : 0
+Messages found crossduplicate on host2  : 0
+Messages void (noheader) on host1       : 0  
+Messages void (noheader) on host2       : 0
+Messages found in host1 not in host2    : 0 messages
+Messages found in host2 not in host1    : 1 messages
+Messages deleted on host1               : 0
+Messages deleted on host2               : 0
+Total bytes transferred                 : 13748 (13.426 KiB)
+Total bytes skipped                     : 66354775 (63.281 MiB)
+Message rate                            : 0.0 messages/s
+Average bandwidth rate                  : 0.2 KiB/s
+Reconnections to host1                  : 0
+Reconnections to host2                  : 0
+Memory consumption at the end           : 68.6 MiB (*time 1.3 MiB*h) (started with 189.3 MiB)
+Load end is                             : 2.40 3.46 3.98 on 11 cores
+CPU time and %cpu                       : 3.08 sec 4.7 %cpu 0.4 %allcpus
+Biggest message transferred             : 6880 bytes (6.719 KiB)
+Memory/biggest message ratio            : 10451.9
+The sync looks good, all 2224 identified messages in host1 are on host2.
+There is no unidentified message on host1.
+The sync is not strict, there are 1 among 2225 identified messages in host2 that are not on host1. Use --delete2 and sync again to delete them and have a strict sync.
+Detected 0 errors
+Check if a new imapsync release is available by adding --releasecheck
+Homepage: https://imapsync.lamiral.info/
+Exiting with return value 0 (EX_OK: successful termination) 0/50 nb_errors/max_errors PID 70524
+Removing pidfile /Users/lucashenrique/tmp/imapsync.pid
+Log file is LOG_imapsync/2025_12_15_19_19_35_684_intima_fenelonadvogados_adv_br_intima_fenelonadvogados_adv_br.txt ( to change it, use --logfile filepath ; or use --nolog to turn off logging )

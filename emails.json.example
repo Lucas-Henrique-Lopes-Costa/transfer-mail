@@ -1,0 +1,28 @@
+[
+    {
+        "from": {
+            "email": "origem@exemplo.com",
+            "senha": "sua_senha_origem",
+            "imap_server": "mail.exemplo.com",
+            "imap_port": 993,
+            "use_ssl": true
+        },
+        "to": {
+            "email": "destino@exemplo.com",
+            "senha": "sua_senha_destino",
+            "imap_server": "mail.exemplo.com",
+            "imap_port": 993,
+            "use_ssl": true
+        }
+    },
+    {
+        "from": {
+            "email": "gmail@gmail.com",
+            "senha": "senha_app_gmail"
+        },
+        "to": {
+            "email": "outlook@outlook.com",
+            "senha": "senha_outlook"
+        }
+    }
+]
