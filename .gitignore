@@ -4,6 +4,7 @@ logs/
 
 # Arquivos sensíveis
 emails.json
+LOG_imapsync
 
 # Python
 __pycache__/
